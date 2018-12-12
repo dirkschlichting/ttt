@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jLotto App von Bilal</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+ 
+  <style>
+  #feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #FECA40; }
+  #selectable .ui-selected { background: #F39814; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+  #selectable li { margin: 3px; padding: 1px; float: left; width: 100px; height: 80px; font-size: 4em; text-align: center; }
+    p {
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+    }
+    p:hover {
+    background: yellow;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+  </script>
+  <script>
+var button = document.getElementById("clickme"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "Click me: " + count;
+};
+  </script>
+
+
+</head>
+<body>
+ 
+     <h1>Lotto</h1>
+
+    <button id="clickme">Click me: 0</button>
+
+
+<ol id="selectable">
+  <li id="eins" class="ui-state-default">1</li>
+  <li id="zwei" class="ui-state-default">2</li>
+  <li id="drei" class="ui-state-default">3</li>
+  <li id="vier" class="ui-state-default">4</li>
+  <li id="fuenf" class="ui-state-default">5</li>
+  <li id="sechs" class="ui-state-default">6</li>
+  <li id="sieben" class="ui-state-default">7</li>
+  <li id="acht" class="ui-state-default">8</li>
+  <li id="neun" class="ui-state-default">9</li>
+  <li id="zehn" class="ui-state-default">10</li>
+  <li id="elf" class="ui-state-default">11</li>
+  <li id="zwoelf" class="ui-state-default">12</li>
+  <li id="dreizehn" class="ui-state-default">13</li>
+  <li id="vierzehn" class="ui-state-default">14</li>
+  <li id="fuenfzehn" class="ui-state-default">15</li>
+  <li id="sechzehn" class="ui-state-default">16</li>
+  <li id="siebzehn" class="ui-state-default">17</li>
+  <li id="achtzehn" class="ui-state-default">18</li>
+  <li id="neunzehn" class="ui-state-default">19</li>
+  <li id="zwanzig" class="ui-state-default">20</li>
+  <li id="einundzwanzig" class="ui-state-default">21</li>
+  <li id="zweiundzwanzig" class="ui-state-default">22</li>
+  <li id="dreiundzwanzig" class="ui-state-default">23</li>
+  <li id="vierundzwanzig" class="ui-state-default">24</li>
+  <li id="fuenfundzwanzig" class="ui-state-default">25</li>
+  <li id="sechsundzwanzig" class="ui-state-default">26</li>
+  <li id="siebenundzwanzig" class="ui-state-default">27</li>
+  <li id="achtundzwanzig" class="ui-state-default">28</li>
+  <li id="neunundzwanzig" class="ui-state-default">29</li>
+  <li id="dreissig" class="ui-state-default">30</li>
+  <li id="einunddreissig" class="ui-state-default">31</li>
+  <li id="zweiunddreissig" class="ui-state-default">32</li>
+  <li id="dreiunddreissig" class="ui-state-default">33</li>
+  <li id="vierunddreissig" class="ui-state-default">34</li>
+  <li id="fuenfunddreissig" class="ui-state-default">35</li>
+  <li id="sechsunddreissig" class="ui-state-default">36</li>
+  <li id="siebenunddreissig" class="ui-state-default">37</li>
+  <li id="achtunddreissig" class="ui-state-default">38</li>
+  <li id="neununddreissig" class="ui-state-default">39</li>
+  <li id="vierzig" class="ui-state-default">40</li>
+  <li id="einundvierzig" class="ui-state-default">41</li>
+  <li id="zweiundvierzig" class="ui-state-default">42</li>
+  <li id="dreiundvierzig" class="ui-state-default">43</li>
+  <li id="vierundvierzig" class="ui-state-default">44</li>
+  <li id="fuenfundvierzig" class="ui-state-default">45</li>
+  <li id="sechsundvierzig" class="ui-state-default">46</li>
+</ol>
+ 
+</body>
+</html>
